@@ -1,0 +1,30 @@
+// Format:
+$(selector).colorbox({key:value, key:value, key:value});
+// Examples:
+// Image links displayed as a group
+$('a.gallery').colorbox({rel:'gal'});
+$.colorbox.top:50,"50px","10%
+$.colorbox.bottom:50,"50px","10%
+$.colorbox.left:50,"50px","10%
+$.colorbox.right:50,"50px","10%
+$.colorbox.fadeOut:300
+$.colorbox.resize
+$.colorbox.slideshomStart
+$.colorbox<width:"100%","500px">
+$.colorbox<height:"100%","500px">
+$.colorbox<inerWidth:"50%","500px">
+$.colorbox<innerHeight:"50%","500px">
+// Ajax
+$('a#login').colorbox();
+
+// Called directly, without assignment to an element:
+$.colorbox({href:"thankyou.html"});
+
+// Called directly with HTML
+$.colorbox({html:"<h1>Welcome</h1>"});
+
+// Colorbox can accept a function in place of a static value:
+$("a.gallery").colorbox({rel: 'gal', title: function(){
+  var url = $(this).attr('href');
+  return '<a href="' + url + '" target="_blank">Open In New Window</a>';
+}});
